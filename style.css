@@ -87,4 +87,7 @@
   .fa-color {
     color: #505f79;
   }
+  li {
+      list-style: none;
+  }
   
