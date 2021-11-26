@@ -1,7 +1,7 @@
 * {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
 }
 
@@ -91,10 +91,10 @@ nav {
 .w1contain {
   display: flex;
   flex-direction: column;
-  margin-left: 25px;
-  margin-right: 25px;
   border-radius: 10px;
   background-color: white;
+  margin: 100px 20px;
+  padding: 20px;
 }
 
 .works-title {
@@ -108,17 +108,19 @@ nav {
   margin-left: 10px;
   flex-wrap: wrap;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .spec1 {
   list-style: none;
   color: #344563;
+  margin: 16px 0px 10px 0px ;
 }
 
 .spec2 {
   margin-left: 30px;
   color: #7a869a;
+  margin-top: 16px;
 }
 
 .w1par {
@@ -225,4 +227,10 @@ nav {
 
 .write {
   margin-top: 10px;
+}
+
+.cr-grid {
+  display: grid;
+  grid-template-columns: 1;
+  background-color: #E5E5E5;;
 }
