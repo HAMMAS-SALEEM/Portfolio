@@ -73,7 +73,6 @@ nav {
 }
 
 .fa {
-
   color: #505f79;
   margin-right: 10px;
 }
@@ -114,7 +113,7 @@ nav {
 .spec1 {
   list-style: none;
   color: #344563;
-  margin: 16px 0px 10px 0px ;
+  margin: 16px 0 10px 0;
 }
 
 .spec2 {
@@ -134,7 +133,7 @@ nav {
 .w1btn:disabled {
   color: #6070ff;
   font-size: 15px;
-  background: #eBeBff;
+  background: #ebebff;
   border: none;
   padding: 10px;
   margin-top: 20px;
@@ -192,17 +191,19 @@ nav {
   list-style: none;
   font-weight: 500;
   font-size: 20px;
+
   /* border: rgb(74, 71, 255) 2px solid; */
   grid-column: 1 / 2;
 }
 
 .abm-skills-img {
   list-style: none;
+
   /* border: palevioletred 2px solid; */
   grid-column: 1 / span 2;
   height: 80px;
   display: flex;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   margin: 5px 5px;
   border-radius: 10px;
 }
@@ -222,6 +223,7 @@ nav {
 .abm-skills-arrow {
   list-style: none;
   margin-top: 10px;
+
   /* border: purple 2px solid; */
 }
 
@@ -231,6 +233,6 @@ nav {
 
 .cr-grid {
   display: grid;
-  grid-template-columns: 1;
-  background-color: #E5E5E5;;
+  grid-template-columns: 1fr;
+  background-color: #e5e5e5;
 }
