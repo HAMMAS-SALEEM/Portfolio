@@ -27,9 +27,8 @@ nav {
   margin: 3px 0;
 }
 
-section {
+.homepage {
   background-image: url(background.png);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -70,10 +69,10 @@ section {
 
 .icon-list {
   display: flex;
+  list-style: none;
 }
 
 .fa {
-  list-style: none;
   color: #505f79;
   margin-right: 10px;
 }
@@ -88,6 +87,152 @@ section {
   color: #505f79;
 }
 
-li {
+.w1contain {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  margin: 100px 20px;
+  padding: 20px;
+}
+
+.works-title {
+  color: #172b4d;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.w11contain {
+  display: flex;
+  margin-left: 10px;
+  flex-wrap: wrap;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.spec1 {
   list-style: none;
+  color: #344563;
+  margin: 16px 0 10px 0;
+}
+
+.spec2 {
+  margin-left: 30px;
+  color: #7a869a;
+  margin-top: 16px;
+}
+
+.w1par {
+  width: 295px;
+  height: 76px;
+  margin-top: 20px;
+  color: #344563;
+  font-size: 17px;
+}
+
+.w1btn:disabled {
+  color: #6070ff;
+  font-size: 15px;
+  background: #ebebff;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.w1b:disabled {
+  margin-left: 10px;
+}
+
+.w1btn2 {
+  padding: 16px;
+  width: 120px;
+  margin-bottom: 30px;
+  border: 1px solid #396df2;
+  color: #396df2;
+  background-color: white;
+  border-radius: 10px;
+  transition: 100ms;
+}
+
+.w1btn2:hover {
+  border: 1px solid #396df2;
+  color: white;
+  background-color: #396df2;
+}
+
+.w1btn3 {
+  padding: 7px 16px;
+  width: 130px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #396df2;
+  color: #396df2;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.w1btn3:hover {
+  border: 1px solid #396df2;
+  color: white;
+  background-color: #396df2;
+  transition: 100ms;
+}
+
+.abm-skills-ul {
+  /* border: olive 2px solid; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.abm-skills {
+  list-style: none;
+  font-weight: 500;
+  font-size: 20px;
+
+  /* border: rgb(74, 71, 255) 2px solid; */
+  grid-column: 1 / 2;
+}
+
+.abm-skills-img {
+  list-style: none;
+
+  /* border: palevioletred 2px solid; */
+  grid-column: 1 / span 2;
+  height: 80px;
+  display: flex;
+  background-color: #f7f7f9;
+  margin: 5px 5px;
+  border-radius: 10px;
+}
+
+.abm-skills-img2 {
+  margin: 20px;
+}
+
+.abm-skills-img3 {
+  font-weight: 500;
+  font-size: 15px;
+  color: #253858;
+  position: relative;
+  top: 28px;
+}
+
+.abm-skills-arrow {
+  list-style: none;
+  margin-top: 10px;
+
+  /* border: purple 2px solid; */
+}
+
+.write {
+  margin-top: 10px;
+}
+
+.cr-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #e5e5e5;
 }
