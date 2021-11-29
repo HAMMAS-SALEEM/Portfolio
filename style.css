@@ -282,7 +282,7 @@ nav {
 }
 
 .contact-textarea:focus {
-  border: 1px solid #6070ff ;
+  border: 1px solid #6070ff;
 }
 
 .contact-button {
@@ -304,7 +304,6 @@ nav {
   border: 1px solid white;
   color: white;
   font-size: 17px;
-
 }
 
 .input-container {
