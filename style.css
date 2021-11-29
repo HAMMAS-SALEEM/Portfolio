@@ -28,7 +28,7 @@ nav {
 }
 
 .homepage {
-  background-image: url(background.png);
+  background-image: url(./images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -181,7 +181,6 @@ nav {
 }
 
 .abm-skills-ul {
-  /* border: olive 2px solid; */
   width: 100%;
   display: grid;
   grid-template-columns: 4fr 1fr;
@@ -191,15 +190,11 @@ nav {
   list-style: none;
   font-weight: 500;
   font-size: 20px;
-
-  /* border: rgb(74, 71, 255) 2px solid; */
   grid-column: 1 / 2;
 }
 
 .abm-skills-img {
   list-style: none;
-
-  /* border: palevioletred 2px solid; */
   grid-column: 1 / span 2;
   height: 80px;
   display: flex;
@@ -223,8 +218,6 @@ nav {
 .abm-skills-arrow {
   list-style: none;
   margin-top: 10px;
-
-  /* border: purple 2px solid; */
 }
 
 .write {
@@ -238,7 +231,7 @@ nav {
 }
 
 .contact-form {
-  background-image: url("./background2.png");
+  background-image: url(./images/background2.png);
   background-color: #6070ff;
   background-size: cover;
 }
@@ -253,7 +246,7 @@ nav {
   font-size: 40px;
   text-align: center;
   color: white;
-  margin-top: 70px;
+  margin-top: 160px;
 }
 
 .contact-info p {
@@ -271,6 +264,9 @@ nav {
   margin-left: 24px;
   margin-right: 24px;
   border-radius: 8px;
+  font-size: 17px;
+  border: none;
+  color: #172b4d;
 }
 
 .contact-textarea {
@@ -280,6 +276,13 @@ nav {
   margin-left: 24px;
   margin-right: 24px;
   border-radius: 8px;
+  font-size: 17px;
+  border: none;
+  color: #172b4d;
+}
+
+.contact-textarea:focus {
+  border: 1px solid #6070ff ;
 }
 
 .contact-button {
@@ -290,10 +293,27 @@ nav {
   margin-left: 24px;
   margin-right: 24px;
   align-self: flex-start;
+  border-radius: 8px;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.contact-button:hover {
+  background-color: #6070ff;
+  border: 1px solid white;
+  color: white;
+  font-size: 17px;
+
 }
 
 .input-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.home-ind {
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
