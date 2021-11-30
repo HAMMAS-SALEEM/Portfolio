@@ -247,6 +247,7 @@ nav {
   text-align: center;
   color: white;
   margin-top: 160px;
+  margin-bottom: 20px;
 }
 
 .contact-info p {
@@ -258,8 +259,8 @@ nav {
 }
 
 .contact-input {
-  width: 327px;
-  height: 48px;
+  width: 317px;
+  height: 38px;
   margin-bottom: 20px;
   margin-left: 24px;
   margin-right: 24px;
@@ -267,12 +268,12 @@ nav {
   font-size: 17px;
   border: none;
   color: #172b4d;
-  text-indent: 10px;
+  padding: 10px 15px;
 }
 
 .contact-textarea {
-  width: 327px;
-  height: 170px;
+  width: 317px;
+  height: 160px;
   margin-bottom: 20px;
   margin-left: 24px;
   margin-right: 24px;
@@ -280,8 +281,8 @@ nav {
   font-size: 17px;
   border: none;
   color: #172b4d;
-  text-indent: 10px;
   padding-top: 10px;
+  padding: 10px 15px;
 }
 
 .contact-textarea:focus {
@@ -299,7 +300,8 @@ nav {
   border-radius: 8px;
   border: none;
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 500;
+  background-color: white;
 }
 
 .contact-button:hover {
