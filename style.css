@@ -267,6 +267,7 @@ nav {
   font-size: 17px;
   border: none;
   color: #172b4d;
+  text-indent: 10px;
 }
 
 .contact-textarea {
@@ -279,6 +280,8 @@ nav {
   font-size: 17px;
   border: none;
   color: #172b4d;
+  text-indent: 10px;
+  padding-top: 10px;
 }
 
 .contact-textarea:focus {
