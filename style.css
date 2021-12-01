@@ -320,3 +320,26 @@ nav {
   margin-top: 50px;
   margin-bottom: 10px;
 }
+
+@media screen and (min-width: 1024px){
+  
+  .homepage {
+    width: 1024px;
+    height: 768px;
+    background-image: url(./images/background_1024.png);
+  }
+
+  .home-page {
+  
+  }
+
+  .intro {
+    width: 350px;
+    height: 122px;
+  }
+
+  .description {
+    width: 920px;
+    height: 60px;
+  }
+}
