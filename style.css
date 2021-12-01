@@ -350,6 +350,8 @@ nav {
   .w1contain {
     display: flex;
     flex-direction: row;
+    /* width: 900px; */
+    justify-content: space-around;
   }
 
   .pti {
@@ -359,4 +361,6 @@ nav {
   .snap01 {
     display: inherit;
   }
+
+
 }
