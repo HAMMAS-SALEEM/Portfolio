@@ -207,11 +207,13 @@ nav {
   background-color: #f7f7f9;
   margin: 5px 5px;
   border-radius: 10px;
+  
   /* width: 147%; */
 }
 
 .abm-skills-img2 {
   margin: 20px;
+  
 }
 
 .abm-skills-img3 {
@@ -226,7 +228,6 @@ nav {
   list-style: none;
   margin-top: 10px;
   margin-left: 30px;
-  margin-right: ;
   
 }
 
@@ -436,6 +437,28 @@ nav {
 
   .abm-skills-img {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .abm-skills-img2 {
+    position: relative;
+    bottom: 30px;
+    right: 23px;
+  }
+
+  .abm-skills-img3 {
+    position: relative;
+    bottom: 50px;
+  }
+
+  .write {
+    margin-top: 30px;
+  }
+
+  .arrow-up {
+    position: relative;
+    top: 30px;
   }
 
   .contact-form {
