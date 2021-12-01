@@ -228,6 +228,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #e5e5e5;
+  width: 100%;
 }
 
 .contact-form {
@@ -363,7 +364,7 @@ nav {
   }
 
   .cr-grid {
-    padding: 0px 180px;
+    /* padding: 0px 180px; */
   }
 
   .img13 {
