@@ -351,7 +351,7 @@ nav {
     display: flex;
     flex-direction: row;
     /* width: 900px; */
-    justify-content: space-around;
+    /* justify-content: space-around; */
   }
 
   .pti {
@@ -362,5 +362,15 @@ nav {
     display: inherit;
   }
 
+  .cr-grid {
+    padding: 0px 180px;
+  }
 
+  .img13 {
+    align-self: flex-start;
+  }
+
+  .img24 {
+    align-self: flex-end;
+  }
 }
