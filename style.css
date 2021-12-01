@@ -321,16 +321,20 @@ nav {
   margin-bottom: 10px;
 }
 
+.snap01 {
+  display: none;
+}
+
 @media screen and (min-width: 1024px){
   
   .homepage {
-    width: 1024px;
     height: 768px;
     background-image: url(./images/background_1024.png);
   }
 
   .home-page {
-  
+  width: 870px;
+  margin: 100px auto;
   }
 
   .intro {
@@ -339,7 +343,20 @@ nav {
   }
 
   .description {
-    width: 920px;
+    width: 870px;
     height: 60px;
+  }
+
+  .w1contain {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pti {
+    display: none;
+  }
+
+  .snap01 {
+    display: inherit;
   }
 }
