@@ -187,9 +187,9 @@ nav {
 }
 
 .abm-skills-ul {
-  width: 100%;
   display: grid;
   grid-template-columns: 4fr 1fr;
+  width: 100%;
 }
 
 .abm-skills {
@@ -207,7 +207,7 @@ nav {
   background-color: #f7f7f9;
   margin: 5px 5px;
   border-radius: 10px;
-  width: 300px;
+  /* width: 147%; */
 }
 
 .abm-skills-img2 {
@@ -225,6 +225,9 @@ nav {
 .abm-skills-arrow {
   list-style: none;
   margin-top: 10px;
+  margin-left: 30px;
+  margin-right: ;
+  
 }
 
 .write {
