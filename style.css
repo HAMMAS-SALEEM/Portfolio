@@ -13,7 +13,8 @@ nav {
   font-weight: bold;
   font-size: 18px;
   color: #6070ff;
-  margin-top: 5px;
+  margin-top: 15px;
+  margin-left: 30px;
 }
 
 .ham0 {
@@ -21,10 +22,11 @@ nav {
 }
 
 .ham {
-  width: 35px;
-  height: 5px;
+  width: 25px;
+  height: 3px;
   background-color: #6070ff;
   margin: 3px 0;
+  border-radius: 3px;
 }
 
 .homepage {
@@ -43,6 +45,10 @@ nav {
 .container0 {
   display: flex;
   justify-content: space-between;
+}
+
+.desktop-nav {
+  display: none;
 }
 
 .intro {
@@ -328,6 +334,26 @@ nav {
 }
 
 @media screen and (min-width: 1024px){
+  .logo {
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: inherit;
+    margin-right: 30px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #344563;
+
+  }
   
   .homepage {
     height: 768px;
