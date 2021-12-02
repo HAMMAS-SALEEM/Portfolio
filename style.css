@@ -163,18 +163,30 @@ body {
   padding: 16px;
   width: 120px;
   margin-bottom: 30px;
-  border: 1px solid #396df2;
-  color: #396df2;
+  border: 1px solid #6070ff;
+  color: #6070ff;
   background-color: white;
   border-radius: 10px;
   transition: 100ms;
 }
 
 .w1btn2:hover {
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
   color: white;
-  background-color: #396df2;
+  background-color: #6070ff;
   cursor: pointer;
+}
+
+.w1btn2:active {
+  background-color: #2230d2;
+  color: white;
+  border: 1px solid #2230d2;
+}
+
+.w1btn2:disabled {
+  background: white;
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
 }
 
 .w1btn3 {
@@ -183,18 +195,30 @@ body {
   height: 47px;
   margin-top: 20px;
   margin-bottom: 30px;
-  border: 1px solid #396df2;
-  color: #396df2;
+  border: 1px solid #6070ff;
+  color: #6070ff;
   background-color: white;
   border-radius: 10px;
 }
 
 .w1btn3:hover {
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
   color: white;
-  background-color: #396df2;
+  background-color: #6070ff;
   transition: 100ms;
   cursor: pointer;
+}
+
+.w1btn3:active {
+  background-color: #2230d2;
+  color: white;
+  border: 1px solid #2230d2;
+}
+
+.w1btn3:disabled {
+  background: white;
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
 }
 
 .section-about-myself-2 {
