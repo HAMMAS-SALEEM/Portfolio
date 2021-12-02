@@ -339,15 +339,15 @@ nav {
   display: none;
 }
 
-@media screen and (min-width: 1024px){
-.logo {
-  margin-left: 60px;
-  margin-top: 10px;
-}
-  
-.mobile-nav {
-  display: none;
-}
+@media screen and (min-width: 1024px) {
+  .logo {
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
 
   .desktop-nav {
     display: inherit;
@@ -358,17 +358,16 @@ nav {
     text-decoration: none;
     margin-right: 30px;
     color: #344563;
-
   }
-  
+
   .homepage {
     height: 768px;
     background-image: url(./images/background_1024.png);
   }
 
   .home-page {
-  width: 870px;
-  margin: 100px auto;
+    width: 870px;
+    margin: 100px auto;
   }
 
   .intro {
@@ -446,7 +445,6 @@ nav {
 
   .skills-high-resolution {
     display: flex;
-    justify-content: none;
   }
 
   .abm-skills-ul {
@@ -460,7 +458,7 @@ nav {
   }
 
   .abm-skills-img2 {
-    margin-left: 0px;
+    margin-left: 0;
     position: relative;
     bottom: 30px;
     right: 17px;
@@ -497,7 +495,6 @@ nav {
     position: relative;
     right: 230px;
   }
-  
 
   .write {
     margin-top: 30px;
