@@ -5,7 +5,6 @@
   padding: 0;
 }
 
-
 nav {
   padding: 15px;
 }
@@ -393,8 +392,15 @@ nav {
   .w1contain {
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
     align-self: center;
+  }
+
+  .for-fullscreen {
+    margin-left: 50px;
+  }
+
+  .for-portfolio {
+    margin: 20px 50px;
   }
 
   .pti {
@@ -448,7 +454,6 @@ nav {
 
   .abm-skills-ul {
     margin-top: 140px;
-    margin-left: 100px;
   }
 
   .abm-skills-img {
