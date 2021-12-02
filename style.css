@@ -185,9 +185,13 @@ nav {
   transition: 100ms;
 }
 
+.section-about-myself-2 {
+  width: 100%;
+}
+
 .abm-skills-ul {
   display: grid;
-  grid-template-columns: 227% 1fr;
+  grid-template-columns: 1fr;
   width: 100%;
 }
 
