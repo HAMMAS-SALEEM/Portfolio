@@ -363,8 +363,14 @@ nav {
 
 .list-item-2 {
   background: #f7f7f9;
-  margin: 10px;
+  display: flex;
+  align-items: center;
   padding: 10px;
+  margin-top: 20px;
+}
+
+.name {
+  margin-left: 10px;
 }
 
 .list-3 {
@@ -492,6 +498,13 @@ nav {
 
   .list-item-2 {
     width: 100px;
+    margin: 10px;
+    display: list-item;
+    margin-top: 0px;
+  }
+
+  .name {
+    margin-left: 10px;
   }
 
   .abm-container {
