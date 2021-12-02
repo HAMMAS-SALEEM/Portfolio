@@ -208,8 +208,6 @@ nav {
   background-color: #f7f7f9;
   margin: 5px 5px;
   border-radius: 10px;
-  
-  /* width: 147%; */
 }
 
 .abm-skills-img2 {
@@ -221,11 +219,14 @@ nav {
   font-weight: 500;
   font-size: 15px;
   color: #253858;
-  margin-left: 100px;
   position: relative;
-  /* left: 100px; */
+  left: 100px;
   bottom: 55px;
   list-style: none;
+}
+
+.abm-img-4 {
+  display: none;
 }
 
 .abm-skills-arrow {
@@ -431,6 +432,10 @@ nav {
     height: 48px;
   }
 
+  .section-about-myself {
+    margin-left: 70px;
+  }
+
   .abm-container {
     flex-direction: row;
     justify-content: space-around;
@@ -438,10 +443,12 @@ nav {
 
   .skills-high-resolution {
     display: flex;
+    justify-content: none;
   }
 
   .abm-skills-ul {
     margin-top: 140px;
+    margin-left: 100px;
   }
 
   .abm-skills-img {
@@ -454,15 +461,41 @@ nav {
     margin-left: 0px;
     position: relative;
     bottom: 30px;
-    right: 23px;
+    right: 17px;
   }
 
   .abm-skills-img3 {
+    display: none;
+  }
+
+  .abm-img-4 {
+    display: inherit;
     position: relative;
     top: 100px;
-    right: 120px;
-    font-size: 15px;
   }
+
+  .abm-skills-images4 {
+    list-style: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: #253858;
+  }
+
+  .img1 {
+    position: relative;
+    right: 350px;
+  }
+
+  .img2 {
+    position: relative;
+    right: 300px;
+  }
+
+  .img3 {
+    position: relative;
+    right: 230px;
+  }
+  
 
   .write {
     margin-top: 30px;
