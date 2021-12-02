@@ -39,6 +39,7 @@ body {
   background-size: cover;
   border-radius: 0 0 0 90px;
   background-color: white;
+  margin-top: -2px;
 }
 
 .container {
@@ -233,6 +234,10 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
+}
+
+.abm-intro {
+  width: 40px;
 }
 
 .abm-skills {
