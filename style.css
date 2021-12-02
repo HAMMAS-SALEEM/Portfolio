@@ -380,6 +380,11 @@ nav {
     height: 60px;
   }
 
+  .cr-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
   .w1contain {
     flex-direction: row;
     justify-content: space-between;
@@ -449,7 +454,8 @@ nav {
 
   .abm-skills-img3 {
     position: relative;
-    bottom: 50px;
+    bottom: 200px;
+
   }
 
   .write {
