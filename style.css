@@ -339,7 +339,7 @@ nav {
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 993px) {
   .logo {
     margin-left: 60px;
     margin-top: 10px;
