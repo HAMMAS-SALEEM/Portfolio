@@ -187,7 +187,7 @@ nav {
 
 .abm-skills-ul {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 227% 1fr;
   width: 100%;
 }
 
@@ -339,6 +339,42 @@ nav {
   display: none;
 }
 
+.list-1 {
+  list-style: none;
+}
+
+.list-item-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  flex-basis: 100px;
+  list-style: none;
+}
+
+.list-item-2 {
+  background: #f7f7f9;
+  margin: 10px;
+  padding: 10px;
+}
+
+.list-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.list-4 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 @media screen and (min-width: 1024px) {
   .logo {
     margin-left: 60px;
@@ -436,40 +472,22 @@ nav {
 
   .section-about-myself {
     width: 40%;
+    margin-left: 70px;
   }
 
   .section-about-myself-2 {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .list-1 {
-    list-style: none;
-  }
-
-  .list-item-1 {
+    width: 60%;
+    margin-left: 20px;
     display: flex;
     justify-content: space-between;
   }
 
   .list-2 {
-    background: aliceblue;
-    margin: 10px;
-    padding: 10px;
-    flex-basis: 100px;
-    list-style: none;
+    flex-direction: row;
   }
 
   .list-item-2 {
-    background: aliceblue;
-    margin: 10px;
-    padding: 10px;
-    flex-basis: 100px;
-  }
-
-  .list-3 {
-    display: flex;
-    justify-content: space-between;
+    width: 100px;
   }
 
   .abm-container {
@@ -483,6 +501,7 @@ nav {
 
   .abm-skills-ul {
     margin-top: 140px;
+    grid-template-columns: 4fr 1fr;
   }
 
   .abm-skills-img {
@@ -528,15 +547,6 @@ nav {
   .img3 {
     position: relative;
     right: 230px;
-  }
-
-  /* .write {
-    margin-top: 30px;
-  } */
-
-  .arrow-up {
-    position: relative;
-    top: 30px;
   }
 
   .contact-form {
