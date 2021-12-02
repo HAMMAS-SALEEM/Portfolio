@@ -13,7 +13,8 @@ nav {
   font-weight: bold;
   font-size: 18px;
   color: #6070ff;
-  margin-top: 5px;
+  margin-top: 15px;
+  margin-left: 30px;
 }
 
 .ham0 {
@@ -21,16 +22,24 @@ nav {
 }
 
 .ham {
-  width: 35px;
-  height: 5px;
+  width: 25px;
+  height: 3px;
   background-color: #6070ff;
   margin: 3px 0;
+  border-radius: 3px;
+}
+
+body {
+  background-color: #e5e5e5;
 }
 
 .homepage {
   background-image: url(./images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 0 0 0 90px;
+  background-color: white;
+  margin-top: -2px;
 }
 
 .container {
@@ -41,15 +50,20 @@ nav {
 }
 
 .container0 {
+  background-color: white;
   display: flex;
   justify-content: space-between;
+}
+
+.desktop-nav {
+  display: none;
 }
 
 .intro {
   font-size: 40px;
   font-weight: bold;
   color: #172b4d;
-  margin-top: 125px;
+  margin-top: 61px;
 }
 
 .description {
@@ -59,6 +73,7 @@ nav {
   margin-left: 5px;
   margin-right: 5px;
   color: #172b4d;
+  margin-bottom: 12px;
 }
 
 .connect {
@@ -70,6 +85,11 @@ nav {
 .icon-list {
   display: flex;
   list-style: none;
+  margin-bottom: 68px;
+}
+
+.abm-icons {
+  margin-bottom: 25px;
 }
 
 .fa {
@@ -104,7 +124,6 @@ nav {
 
 .w11contain {
   display: flex;
-  margin-left: 10px;
   flex-wrap: wrap;
   font-weight: 600;
   font-size: 15px;
@@ -149,41 +168,76 @@ nav {
   padding: 16px;
   width: 120px;
   margin-bottom: 30px;
-  border: 1px solid #396df2;
-  color: #396df2;
+  border: 1px solid #6070ff;
+  color: #6070ff;
   background-color: white;
   border-radius: 10px;
   transition: 100ms;
 }
 
 .w1btn2:hover {
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
   color: white;
-  background-color: #396df2;
+  background-color: #6070ff;
+  cursor: pointer;
+}
+
+.w1btn2:active {
+  background-color: #2230d2;
+  color: white;
+  border: 1px solid #2230d2;
+}
+
+.w1btn2:disabled {
+  background: white;
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
 }
 
 .w1btn3 {
   padding: 7px 16px;
-  width: 130px;
-  margin-top: 20px;
+  width: 140px;
+  height: 47px;
+  margin-top: -20px;
   margin-bottom: 30px;
-  border: 1px solid #396df2;
-  color: #396df2;
+  border: 1px solid #6070ff;
+  color: #6070ff;
   background-color: white;
   border-radius: 10px;
 }
 
 .w1btn3:hover {
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
   color: white;
-  background-color: #396df2;
+  background-color: #6070ff;
   transition: 100ms;
+  cursor: pointer;
+}
+
+.w1btn3:active {
+  background-color: #2230d2;
+  color: white;
+  border: 1px solid #2230d2;
+}
+
+.w1btn3:disabled {
+  background: white;
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
+}
+
+.section-about-myself-2 {
+  width: 100%;
 }
 
 .abm-skills-ul {
-  width: 100%;
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.abm-intro {
+  width: 40px;
 }
 
 .abm-skills {
@@ -212,28 +266,41 @@ nav {
   font-size: 15px;
   color: #253858;
   position: relative;
-  top: 28px;
+  left: 100px;
+  bottom: 55px;
+  list-style: none;
+}
+
+.abm-img-4 {
+  display: none;
 }
 
 .abm-skills-arrow {
   list-style: none;
   margin-top: 10px;
+  margin-left: 30px;
 }
 
 .write {
-  margin-top: 10px;
+  color: #344563;
 }
 
 .cr-grid {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #e5e5e5;
+  width: 100%;
+}
+
+.contact-back {
+  background-color: white;
 }
 
 .contact-form {
   background-image: url(./images/background2.png);
   background-color: #6070ff;
   background-size: cover;
+  border-radius: 91.5px 0 0 0;
 }
 
 .contact-info {
@@ -308,6 +375,8 @@ nav {
   border: 1px solid white;
   color: white;
   font-size: 17px;
+  transition: 100ms;
+  cursor: pointer;
 }
 
 .input-container {
@@ -319,4 +388,271 @@ nav {
 .home-ind {
   margin-top: 50px;
   margin-bottom: 10px;
+}
+
+.snap01 {
+  display: none;
+}
+
+.about-me-01 {
+  background-color: white;
+  border-radius: 0 70px 0 0;
+}
+
+.list-1 {
+  list-style: none;
+}
+
+.list-item-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100px;
+  list-style: none;
+}
+
+.list-item-2 {
+  background: #f7f7f9;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.name {
+  margin-left: 10px;
+  color: #253858;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.list-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.list-4 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: inherit;
+    margin-right: 30px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #344563;
+  }
+
+  .homepage {
+    height: 768px;
+    background-image: url(./images/background_1024.png);
+  }
+
+  .home-page {
+    width: 870px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    margin-top: 200px;
+    width: 350px;
+    height: 122px;
+    color: #091e42;
+  }
+
+  .description {
+    color: #344563;
+    margin-bottom: 12px;
+  }
+
+  .cr-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .w1contain {
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .for-fullscreen {
+    margin-left: 50px;
+  }
+
+  .for-portfolio {
+    margin: 20px 50px;
+  }
+
+  .pti {
+    display: none;
+  }
+
+  .snap01 {
+    display: inherit;
+  }
+
+  .img13 {
+    align-self: flex-start;
+  }
+
+  .img24 {
+    align-self: flex-end;
+  }
+
+  .w1par {
+    width: 496px;
+  }
+
+  .abm-intro {
+    margin-top: 80px;
+    width: 200px;
+    height: 114px;
+  }
+
+  .section-about-myself {
+    width: 40%;
+    margin-left: 70px;
+  }
+
+  .section-about-myself-2 {
+    width: 60%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-item-1 {
+    margin-left: 20px;
+  }
+
+  .list-3 {
+    margin-left: 20px;
+  }
+
+  .list-2 {
+    flex-direction: row;
+    margin: 25px 10px 30px 10px;
+  }
+
+  .list-item-2 {
+    width: 100px;
+    margin: 10px;
+    display: list-item;
+    margin-top: -20px;
+  }
+
+  .name {
+    margin-left: 10px;
+  }
+
+  .abm-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .icon-list {
+    margin-bottom: 10px;
+  }
+
+  .abm-icons {
+    margin-bottom: 25px;
+  }
+
+  .w1btn3 {
+    margin-bottom: 80px;
+  }
+
+  .skills-high-resolution {
+    display: flex;
+  }
+
+  .abm-skills-ul {
+    margin-top: 140px;
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .abm-skills-img {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .abm-skills-img2 {
+    margin-left: 0;
+    position: relative;
+    bottom: 30px;
+    right: 17px;
+  }
+
+  .abm-skills-img3 {
+    display: none;
+  }
+
+  .abm-img-4 {
+    display: inherit;
+    position: relative;
+    top: 100px;
+  }
+
+  .abm-skills-images4 {
+    list-style: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: #253858;
+  }
+
+  .img1 {
+    position: relative;
+    right: 350px;
+  }
+
+  .img2 {
+    position: relative;
+    right: 300px;
+  }
+
+  .img3 {
+    position: relative;
+    right: 230px;
+  }
+
+  .contact-form {
+    background-image: url(./images/contact-back-high.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contact-info p {
+    width: 569px;
+  }
+
+  .contact-button {
+    align-self: center;
+  }
+
+  .home-ind {
+    display: none;
+  }
 }
