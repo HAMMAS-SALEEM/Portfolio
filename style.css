@@ -355,8 +355,6 @@ nav {
 .list-2 {
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  padding: 10px;
   flex-basis: 100px;
   list-style: none;
 }
@@ -367,6 +365,7 @@ nav {
   align-items: center;
   padding: 10px;
   margin-top: 20px;
+  border-radius: 5px;
 }
 
 .name {
@@ -492,15 +491,25 @@ nav {
     justify-content: space-between;
   }
 
+  .list-item-1 {
+    margin-left: 20px;
+  }
+
+  .list-3 {
+    margin-left: 20px;
+  }
+
   .list-2 {
     flex-direction: row;
+    margin: 25px 10px 30px 10px;
+
   }
 
   .list-item-2 {
     width: 100px;
     margin: 10px;
     display: list-item;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .name {
