@@ -5,6 +5,7 @@
   padding: 0;
 }
 
+
 nav {
   padding: 15px;
 }
@@ -220,8 +221,11 @@ nav {
   font-weight: 500;
   font-size: 15px;
   color: #253858;
+  margin-left: 100px;
   position: relative;
-  top: 28px;
+  /* left: 100px; */
+  bottom: 55px;
+  list-style: none;
 }
 
 .abm-skills-arrow {
@@ -437,7 +441,7 @@ nav {
   }
 
   .abm-skills-ul {
-    margin-top: 168px;
+    margin-top: 140px;
   }
 
   .abm-skills-img {
@@ -447,6 +451,7 @@ nav {
   }
 
   .abm-skills-img2 {
+    margin-left: 0px;
     position: relative;
     bottom: 30px;
     right: 23px;
@@ -454,8 +459,9 @@ nav {
 
   .abm-skills-img3 {
     position: relative;
-    bottom: 200px;
-
+    top: 100px;
+    right: 120px;
+    font-size: 15px;
   }
 
   .write {
