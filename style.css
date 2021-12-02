@@ -110,7 +110,6 @@ nav {
 
 .w11contain {
   display: flex;
-  
   flex-wrap: wrap;
   font-weight: 600;
   font-size: 15px;
@@ -211,7 +210,6 @@ nav {
 
 .abm-skills-img2 {
   margin: 20px;
-  
 }
 
 .abm-skills-img3 {
@@ -232,7 +230,6 @@ nav {
   list-style: none;
   margin-top: 10px;
   margin-left: 30px;
-  
 }
 
 .write {
@@ -343,14 +340,14 @@ nav {
 }
 
 @media screen and (min-width: 1024px){
-  .logo {
-    margin-left: 60px;
-    margin-top: 10px;
-  }
+.logo {
+  margin-left: 60px;
+  margin-top: 10px;
+}
   
-  .mobile-nav {
-    display: none;
-  }
+.mobile-nav {
+  display: none;
+}
 
   .desktop-nav {
     display: inherit;
