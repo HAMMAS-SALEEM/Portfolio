@@ -233,7 +233,7 @@ nav {
 }
 
 .write {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   color: #344563;
 }
 
@@ -339,7 +339,7 @@ nav {
   display: none;
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 1024px) {
   .logo {
     margin-left: 60px;
     margin-top: 10px;
@@ -375,10 +375,10 @@ nav {
     height: 122px;
   }
 
-  .description {
+  /* .description {
     width: 870px;
     height: 60px;
-  }
+  } */
 
   .cr-grid {
     display: flex;
@@ -424,10 +424,10 @@ nav {
     height: 114px;
   }
 
-  .abm-desc {
+  /* .abm-desc {
     width: 447px;
     height: 114px;
-  }
+  } */
 
   .w1btn3 {
     width: 162px;
@@ -435,7 +435,41 @@ nav {
   }
 
   .section-about-myself {
-    margin-left: 70px;
+    width: 40%;
+  }
+
+  .section-about-myself-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-1 {
+    list-style: none;
+  }
+
+  .list-item-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-2 {
+    background: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: 100px;
+    list-style: none;
+  }
+
+  .list-item-2 {
+    background: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: 100px;
+  }
+
+  .list-3 {
+    display: flex;
+    justify-content: space-between;
   }
 
   .abm-container {
@@ -496,9 +530,9 @@ nav {
     right: 230px;
   }
 
-  .write {
+  /* .write {
     margin-top: 30px;
-  }
+  } */
 
   .arrow-up {
     position: relative;
