@@ -17,6 +17,11 @@ nav {
   margin-left: 30px;
 }
 
+.logo:hover {
+  transition: 100ms;
+  font-size: 22px;
+}
+
 .ham0 {
   margin-top: 6px;
 }
@@ -66,6 +71,11 @@ body {
   margin-top: 61px;
 }
 
+.intro:hover {
+  transition: 100ms;
+  color: #6070ff;
+}
+
 .description {
   font-size: 16px;
   text-align: justify;
@@ -80,6 +90,22 @@ body {
   font-weight: 500;
   font-size: 16px;
   color: #7f8cff;
+}
+
+.list-img {
+  animation-name: connect-right;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes connect-right {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(15px);
+  }
 }
 
 .icon-list {
@@ -462,6 +488,11 @@ body {
     text-decoration: none;
     margin-right: 30px;
     color: #344563;
+  }
+
+  .nav-link:hover {
+    color: #6070ff;
+    transition: 100ms;
   }
 
   .homepage {
