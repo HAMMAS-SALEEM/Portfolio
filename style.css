@@ -464,6 +464,11 @@ body {
     color: #344563;
   }
 
+  .nav-link:hover {
+    color: #6070ff;
+    transition: 100ms;
+  }
+
   .homepage {
     height: 768px;
     background-image: url(./images/background_1024.png);
