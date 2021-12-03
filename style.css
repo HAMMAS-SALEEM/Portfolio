@@ -17,6 +17,11 @@ nav {
   margin-left: 30px;
 }
 
+.logo:hover {
+  transition: 100ms;
+  font-size: 22px;
+}
+
 .ham0 {
   margin-top: 6px;
 }
@@ -66,6 +71,11 @@ body {
   margin-top: 61px;
 }
 
+.intro:hover {
+  transition: 100ms;
+  color: #6070ff;
+}
+
 .description {
   font-size: 16px;
   text-align: justify;
@@ -82,9 +92,9 @@ body {
   color: #7f8cff;
 }
 
-.abm-connect {
+.list-img {
   animation-name: connect-right;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
@@ -94,7 +104,7 @@ body {
   }
 
   to {
-    transform: translateX(10px);
+    transform: translateX(15px);
   }
 }
 
