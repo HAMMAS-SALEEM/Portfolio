@@ -82,6 +82,22 @@ body {
   color: #7f8cff;
 }
 
+.abm-connect {
+  animation-name: connect-right;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes connect-right {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(10px);
+  }
+}
+
 .icon-list {
   display: flex;
   list-style: none;
