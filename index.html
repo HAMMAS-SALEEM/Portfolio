@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZLCHLPPZL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MZLCHLPPZL');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -204,7 +215,7 @@
                                 <img class="arrow-up" src="./images/arrow2.png" alt="arrow-up">
                             </li>
                         </ul>
-                       
+
                     </div>
                 </div>
             </div>
@@ -212,20 +223,21 @@
     </section>
     <footer class="contact-back">
         <div class="contact-form">
-        <form class="contact-info" action="https://formspree.io/f/mwkyenjw" method="POST">
-            <h2>Contact me</h2>
-            <p>If you have an application you are interested in developing, a feature that you need built or a project
-                that needs coding. I’d love to help with it </p>
-            <div class="input-container">
-                <input type="text" name="Name" class="contact-input" maxlength="30" required
-                    placeholder="Write your name">
-                <input type="email" name="_replyTo" class="contact-input" placeholder="Write your email" required>
-                <textarea name="message" class="contact-textarea" cols="30" rows="10" required maxlength="500"
-                    placeholder="Write your message here"></textarea>
-                <input type="submit" class="contact-button" value="Get It Touch">
-            </div>
-            <img class="home-ind" src="./images/home-indicator.png" alt="home_indicator">
-        </form>
+            <form class="contact-info" action="https://formspree.io/f/mwkyenjw" method="POST">
+                <h2>Contact me</h2>
+                <p>If you have an application you are interested in developing, a feature that you need built or a
+                    project
+                    that needs coding. I’d love to help with it </p>
+                <div class="input-container">
+                    <input type="text" name="Name" class="contact-input" maxlength="30" required
+                        placeholder="Write your name">
+                    <input type="email" name="_replyTo" class="contact-input" placeholder="Write your email" required>
+                    <textarea name="message" class="contact-textarea" cols="30" rows="10" required maxlength="500"
+                        placeholder="Write your message here"></textarea>
+                    <input type="submit" class="contact-button" value="Get It Touch">
+                </div>
+                <img class="home-ind" src="./images/home-indicator.png" alt="home_indicator">
+            </form>
         </div>
     </footer>
 </body>
