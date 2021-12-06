@@ -496,8 +496,9 @@ body {
   }
 
   .homepage {
-    height: 768px;
+    /* height: 768px; */
     background-image: url(./images/background_1024.png);
+    padding-bottom: 100px;
   }
 
   .home-page {
