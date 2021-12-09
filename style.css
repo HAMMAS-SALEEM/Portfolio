@@ -105,16 +105,6 @@ body {
   animation-iteration-count: infinite;
 }
 
-@keyframes connect-right {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(15px);
-  }
-}
-
 .icon-list {
   display: flex;
   list-style: none;
@@ -199,7 +189,7 @@ body {
 
 .w1btn2 {
   padding: 16px;
-  /*width*/: 120px;
+  width: 120px;
   margin-bottom: 30px;
   border: 1px solid #6070ff;
   color: #6070ff;
@@ -229,7 +219,7 @@ body {
 
 .w1btn3 {
   padding: 7px 16px;
-  /*width*/: 140px;
+  width: 140px;
   height: 47px;
   margin-top: -20px;
   margin-bottom: 30px;
@@ -260,17 +250,17 @@ body {
 }
 
 .section-about-myself-2 {
-  /*width*/: 100%;
+  width: 100%;
 }
 
 .abm-skills-ul {
   display: grid;
   grid-template-columns: 1fr;
-  /*width*/: 100%;
+  width: 100%;
 }
 
 .abm-intro {
-  /*width*/: 40px;
+  width: 40px;
 }
 
 .abm-skills {
@@ -322,7 +312,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #e5e5e5;
-  /*width*/: 100%;
+  /* width: 100%; */
 }
 
 .contact-back {
@@ -467,7 +457,7 @@ body {
 .list-4 {
   display: flex;
   justify-content: space-between;
-  /*width*/: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -687,4 +677,15 @@ body {
   .home-ind {
     display: none;
   }
+
+  @keyframes connect-right {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(15px);
+    }
+  }
+    
 }
