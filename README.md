@@ -4,7 +4,7 @@
 
 > My First Web App for Mobile
 
-Additional description about the project and its features.
+![screenshot](./images/portfolio-sample.gif)
 
 ## Built With
 
