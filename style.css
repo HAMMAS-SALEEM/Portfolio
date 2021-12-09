@@ -45,6 +45,7 @@ body {
   border-radius: 0 0 0 90px;
   background-color: white;
   margin-top: -2px;
+  width: auto;
 }
 
 .container {
@@ -78,12 +79,17 @@ body {
 
 .description {
   font-size: 16px;
+  font-weight: 500;
   text-align: justify;
   line-height: 28px;
   margin-left: 5px;
   margin-right: 5px;
   color: #172b4d;
   margin-bottom: 12px;
+}
+
+.description:hover {
+  color: orangered;
 }
 
 .connect {
@@ -96,16 +102,6 @@ body {
   animation-name: connect-right;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-}
-
-@keyframes connect-right {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(15px);
-  }
 }
 
 .icon-list {
@@ -315,7 +311,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #e5e5e5;
-  width: 100%;
 }
 
 .contact-back {
@@ -355,8 +350,6 @@ body {
   width: 317px;
   height: 38px;
   margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
   border-radius: 8px;
   font-size: 17px;
   border: none;
@@ -368,8 +361,6 @@ body {
   width: 317px;
   height: 160px;
   margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
   border-radius: 8px;
   font-size: 17px;
   border: none;
@@ -386,8 +377,6 @@ body {
   height: 48px;
   color: #6070ff;
   margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
   align-self: flex-start;
   border-radius: 8px;
   border: none;
@@ -685,5 +674,15 @@ body {
 
   .home-ind {
     display: none;
+  }
+
+  @keyframes connect-right {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(15px);
+    }
   }
 }
