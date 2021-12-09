@@ -312,7 +312,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #e5e5e5;
-  /* width: 100%; */
 }
 
 .contact-back {
@@ -682,10 +681,9 @@ body {
     from {
       transform: translateX(0);
     }
-  
+
     to {
       transform: translateX(15px);
     }
   }
-    
 }
