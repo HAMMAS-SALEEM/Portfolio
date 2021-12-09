@@ -4,7 +4,7 @@
 
 > My First Web App for Mobile
 
-![screenshot](./images/portfolio-sample.gif)
+![screenshot](./images/portfolio-sample.GIF)
 
 ## Built With
 
