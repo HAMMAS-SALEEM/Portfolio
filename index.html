@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZLCHLPPZL"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -13,7 +14,7 @@
 
         gtag('config', 'G-MZLCHLPPZL');
     </script>
-    <meta charset="UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
@@ -24,6 +25,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/303b1d319c.js"></script>
+    
+ 
     <title>HAMMAS Portfolio Homepage</title>
 </head>
 
@@ -31,17 +34,26 @@
     <header class="container0">
         <a href="#" class='logo'>My Logo</a>
         <nav class="mobile-nav">
-            <a href="#" class="ham0">
+            <div onclick="openMain()" class="ham0">
                 <div class="ham"></div>
                 <div class="ham"></div>
                 <div class="ham"></div>
-            </a>
+            </div>
         </nav>
         <nav class="desktop-nav">
-            <a href="#" class="nav-link">Portfolio</a>
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#works" class="nav-link">Portfolio</a>
+            <a href="#about-me" class="nav-link">About</a>
+            <a href="#contact-us" class="nav-link">Contact</a>
         </nav>
+        <div id="mobile_menu" class="mobile_menu">
+            <img onclick="closeMain()" src="./images/cross.svg" class="cross_icon" alt="cross icon">
+            <nav class="mobile_navbar">
+                <a onclick="closeMain()" href="#works" class="nav-link">Portfolio</a>
+                <a onclick="closeMain()" href="#about-me" class="nav-link">About</a>
+                <a onclick="closeMain()" href="#contact-us" class="nav-link">Contact</a>
+            </nav>
+            <div class="home-ind-container"><img class="home-ind-menu" src="./images/home-indicator.png" alt="home indicator"></div>
+        </div>
     </header>
     <section class="homepage">
         <div class="container home-page">
@@ -62,7 +74,7 @@
             </div>
         </div>
     </section>
-    <section class="works">
+    <section id="works" class="works">
         <div class="cr-grid">
             <div class="w1contain">
                 <img class="pti" src="./images/SP.png" alt="Portfolio Title Image">
@@ -158,7 +170,7 @@
             </div>
         </div>
     </section>
-    <section class="about-me-01">
+    <section id="about-me" class="about-me-01">
         <div class="about-me">
             <div class="container abm-container">
                 <div class="section-about-myself">
@@ -221,7 +233,7 @@
             </div>
         </div>
     </section>
-    <footer class="contact-back">
+    <footer id="contact-us" class="contact-back">
         <div class="contact-form">
             <form class="contact-info" action="https://formspree.io/f/mwkyenjw" method="POST">
                 <h2>Contact me</h2>
@@ -240,6 +252,7 @@
             </form>
         </div>
     </footer>
+    <script src='app.js'></script>
 </body>
 
 </html>
