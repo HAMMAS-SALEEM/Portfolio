@@ -34,6 +34,34 @@ nav {
   border-radius: 3px;
 }
 
+.mobile_menu {
+  background-color: #6070ff;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.8;
+  filter: blur(20%);
+  padding: 500px auto;
+}
+.mobile_navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  clear: both;
+}
+
+.cross_icon {
+  float: right;
+}
+
+.mobile_navbar a {
+  color: #fff;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
 body {
   background-color: #e5e5e5;
 }
