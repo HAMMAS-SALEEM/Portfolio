@@ -35,11 +35,11 @@ nav {
 }
 
 .mobile_menu {
-  background-color: #6070ff;
+  background-color: rgba(96, 112, 255, 0.7);
+  backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
   height: 100vh;
-  opacity: 0.8;
   padding: 500px auto;
   visibility: hidden;
 }
