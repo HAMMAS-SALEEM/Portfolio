@@ -24,30 +24,31 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/303b1d319c.js"></script>
+    <script src="script.js"></script>
     <title>HAMMAS Portfolio Homepage</title>
 </head>
 
 <body>
     <header class="container0">
         <a href="#" class='logo'>My Logo</a>
-        <nav class="mobile-nav">
-            <a href="#" class="ham0">
+        <nav onclick="openMenu()" class="mobile-nav">
+            <div class="ham0">
                 <div class="ham"></div>
                 <div class="ham"></div>
                 <div class="ham"></div>
-            </a>
+            </div>
         </nav>
         <nav class="desktop-nav">
-            <a href="#" class="nav-link">Portfolio</a>
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#works" class="nav-link">Portfolio</a>
+            <a href="#about-me" class="nav-link">About</a>
+            <a href="#contact-us" class="nav-link">Contact</a>
         </nav>
-        <div class="mobile_menu">
-            <img src="./images/cross.svg" class="cross_icon" alt="cross icon">
+        <div id="mobile_menu" class="mobile_menu">
+            <img onclick="closeMenu()" src="./images/cross.svg" class="cross_icon" alt="cross icon">
             <nav class="mobile_navbar">
-                <a href="#" class="nav-link">Portfolio</a>
-                <a href="#" class="nav-link">About</a>
-                <a href="#" class="nav-link">Contact</a>
+                <a href="#works" class="nav-link">Portfolio</a>
+                <a href="#about-me" class="nav-link">About</a>
+                <a href="#contact-us" class="nav-link">Contact</a>
             </nav>
         </div>
     </header>
@@ -70,7 +71,7 @@
             </div>
         </div>
     </section>
-    <section class="works">
+    <section id="works" class="works">
         <div class="cr-grid">
             <div class="w1contain">
                 <img class="pti" src="./images/SP.png" alt="Portfolio Title Image">
@@ -166,7 +167,7 @@
             </div>
         </div>
     </section>
-    <section class="about-me-01">
+    <section id="about-me" class="about-me-01">
         <div class="about-me">
             <div class="container abm-container">
                 <div class="section-about-myself">
@@ -229,7 +230,7 @@
             </div>
         </div>
     </section>
-    <footer class="contact-back">
+    <footer id="contact-us" class="contact-back">
         <div class="contact-form">
             <form class="contact-info" action="https://formspree.io/f/mwkyenjw" method="POST">
                 <h2>Contact me</h2>
