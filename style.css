@@ -35,7 +35,7 @@ nav {
 }
 
 .mobile_menu {
-  background-color: rgba(96, 112, 255, 0.7);
+  background-color: rgba(65, 84, 255, 0.6);
   backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
