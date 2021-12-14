@@ -97,7 +97,7 @@
                         <button type="button" class="w1btn w1b" disabled>css</button>
                         <button type="button" class="w1btn w1b" disabled>javaScript</button>
                     </div>
-                    <button type="button" class="w1btn2">See Project</button>
+                    <button onclick="openModal()" type="button" class="w1btn2">See Project</button>
                 </div>
             </div>
             <div class="w1contain">
@@ -255,9 +255,8 @@
         </div>
     </footer>
     <div class="modal" id="modal">
-
         <div class="modal_container" id="modal_container">
-
+            <span onclick="closeModal()" class="closeBtn">&times;</span>
         </div>
     </div>
     <script src='app.js'></script>
