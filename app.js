@@ -1,7 +1,7 @@
 const array = [{
-  id: 1,
+  id: '1',
   name: 'Tonic',
-  shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ',
   featured: ['CANOPY', 'Back End Dev', 2015],
   image: 'images/SP.png',
@@ -11,9 +11,9 @@ const array = [{
   source_link: '',
 },
 {
-  id: 2,
+  id: '2',
   name: 'Multi-Post Stories',
-  shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   featured: ['CANOPY', 'Back End Dev', 2015],
   image: 'images/mps2.png',
@@ -23,9 +23,9 @@ const array = [{
   source_link: '',
 },
 {
-  id: 3,
+  id: '3',
   name: 'Tonic',
-  shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   featured: ['CANOPY', 'Back End Dev', 2015],
   image: 'images/mps.png',
@@ -35,9 +35,9 @@ const array = [{
   source_link: '',
 },
 {
-  id: 4,
+  id: '4',
   name: 'Multi-Post Stories',
-  shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   featured: ['CANOPY', 'Back End Dev', 2015],
   image: 'images/mps2.png',
@@ -48,12 +48,8 @@ const array = [{
 },
 ];
 const main = document.querySelector('.mobile_menu');
-const modal = document.querySelector('.modal');
-const { body } = document.body;
 const dynamicWork = document.querySelector('.works');
 const modelView = document.querySelector('.bg_model');
-const cross_btn = document.getElementsByClassName('cross_btn');
-let project_title = document.querySelector('.project_title');
 
 function openMain() {
   main.style.visibility = 'visible';
@@ -64,19 +60,18 @@ function closeMain() {
 }
 
 function closeModel() {
-  modelView.style.visibility = 'hidden'
+  modelView.style.visibility = 'hidden';
 }
 
 function openModel(id) {
-  modelView.style.visibility = 'visible'
-  console.log(id);
-  for ( let i=0; i<array.length; i++){
-    if (id == array[i].id){
+  modelView.style.visibility = 'visible';
+  for (let i = 0; i < array.length; i += 1) {
+    if (id === array[i].id) {
       modelView.innerHTML = `
       <div class="model_content" id="modelcontent">
       <div class="model_header">
           <h2 class="project_title">${array[i].name}</h2>
-          <span onclick="closeModel()" class="cross_btn">&times;</span>
+          <span onclick="closeModel()" class="crossBtn">&times;</span>
       </div>
       <ul class="info_list">
           <li class="item1">${array[i].featured[0]}</li>
@@ -95,16 +90,17 @@ function openModel(id) {
           <a class="model_btn live" href=${array[i].live_version}>See live<img class="_icon" src="./images/Icon.svg" alt="live icon"></a>
           <a class="model_btn source" href=${array[i].source_link}>See project<img class="_icon" src="./images/Vector.svg" alt="github icon"></a>
       </div>
-  </div>`
-     } 
+  </div>`;
+    }
   }
 }
 
 openMain();
 closeMain();
-
-for(let i=0; i<array.length; i++){
-dynamicWork.innerHTML += `<div class="cr-grid">
+openModel();
+closeModel();
+for (let i = 0; i < array.length; i += 1) {
+  dynamicWork.innerHTML += `<div class="cr-grid">
   <div id=${array[i].id} class="w1contain">
       <img class="pti" src=${array[i].image} alt="Portfolio Title Image"/>
       <img class="snap01 img13" src=${array[i].imageDesktop} alt="Portfolio"/>
@@ -128,6 +124,5 @@ dynamicWork.innerHTML += `<div class="cr-grid">
       </div>
   </div>
   </div>
-  `
+  `;
 }
-
