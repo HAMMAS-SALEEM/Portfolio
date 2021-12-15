@@ -179,7 +179,7 @@ body {
   align-items: center;
   justify-content: center;
   visibility: hidden;
-  
+  backdrop-filter: blur(10px);
 }
 
 .model_content {
