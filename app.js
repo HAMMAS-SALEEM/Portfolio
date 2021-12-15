@@ -4,6 +4,7 @@ const { body } = document.body;
 const dynamicWork = document.querySelector('.works');
 const modelView = document.querySelector('.bg_model');
 const cross_btn = document.getElementsByClassName('cross_btn');
+let project_title = document.querySelector('.project_title');
 
 function openMain() {
   main.style.visibility = 'visible';
@@ -19,10 +20,33 @@ function closeModel() {
 
 function openModel(id) {
   modelView.style.visibility = 'visible'
+  console.log(id);
   for ( let i=0; i<array.length; i++){
-    if (id === array[i].id){
-      modelView.innerHTML(array[i])
-     } // else { alert('not found')}
+    if (id == array[i].id){
+      modelView.innerHTML += `
+      <div class="model_content" id="modelcontent">
+      <div class="model_header">
+          <h2 class="project_title">${array[i].name}</h2>
+          <span onclick="closeModel()" class="cross_btn">&times;</span>
+      </div>
+      <ul class="info_list">
+          <li class="item1">${array[i].featured[0]}</li>
+          <li class="item2"><span class="dot">&bull;</span><span>${array[i].featured[1]}</span></li>
+          <li class="item2"><span class="dot">&bull;</span><span>${array[i].featured[2]}</span></li>
+      </ul>
+      <img class="img_project " src=${array[i].image} alt="project">
+      <p class="project_description">${array[i].longDescription}</p>
+      <ul class="tech_list">
+          <li>${array[i].technologies[0]}</li>
+          <li class="margin_li">${array[i].technologies[1]}</li>
+          <li class="margin_li">${array[i].technologies[2]}</li>
+      </ul>
+      <div class="buttons">
+          <a class="model_btn live" href=${array[i].live_version}>See live</a>
+          <a class="model_btn source" href=${array[i].source_link}></a>
+      </div>
+  </div>`
+     } 
   }
 }
 
