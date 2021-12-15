@@ -284,6 +284,9 @@ body {
   padding: 6px 10px;
   border-radius: 8px;
   color: #396df2;
+  width: 120px;
+  height: 26px;
+  margin-top: 40px;
 }
 
 .buttons {
@@ -920,6 +923,14 @@ body {
   .buttons {
     grid-column: 4/5;
     grid-row: 5/6;
+  }
+
+  .live {
+    margin-right: 5px;
+  }
+
+  .model_btn {
+    margin-top: 0;
   }
 
   @keyframes connect-right {
