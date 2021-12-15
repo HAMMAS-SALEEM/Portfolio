@@ -1,3 +1,52 @@
+const array = [{
+  id: 1,
+  name: 'Tonic',
+  shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ',
+  featured: ['CANOPY', 'Back End Dev', 2015],
+  image: 'images/SP.png',
+  imageDesktop: 'images/Snap01.png',
+  technologies: ['html', 'css', 'javascript'],
+  live_version: 'https://hammas-saleem.github.io/Portfolio',
+  source_link: '',
+},
+{
+  id: 2,
+  name: 'Multi-Post Stories',
+  shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  featured: ['CANOPY', 'Back End Dev', 2015],
+  image: 'images/mps2.png',
+  imageDesktop: 'images/snap02.png',
+  technologies: ['html', 'css', 'javascript'],
+  live_version: 'https://hammas-saleem.github.io/Portfolio',
+  source_link: '',
+},
+{
+  id: 3,
+  name: 'Tonic',
+  shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  featured: ['CANOPY', 'Back End Dev', 2015],
+  image: 'images/mps.png',
+  imageDesktop: 'images/snap03.png',
+  technologies: ['html', 'css', 'javascript'],
+  live_version: 'https://hammas-saleem.github.io/Portfolio',
+  source_link: '',
+},
+{
+  id: 4,
+  name: 'Multi-Post Stories',
+  shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  featured: ['CANOPY', 'Back End Dev', 2015],
+  image: 'images/mps2.png',
+  imageDesktop: 'images/snap04.png',
+  technologies: ['html', 'css', 'javascript'],
+  live_version: 'https://hammas-saleem.github.io/Portfolio',
+  source_link: '',
+},
+];
 const main = document.querySelector('.mobile_menu');
 const modal = document.querySelector('.modal');
 const { body } = document.body;
@@ -54,56 +103,6 @@ function openModel(id) {
 openMain();
 closeMain();
 
-const array = [{
-  id: 1,
-  name: 'Tonic',
-  shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ',
-  featured: ['CANOPY', 'Back End Dev', 2015],
-  image: 'images/SP.png',
-  imageDesktop: 'images/Snap01.png',
-  technologies: ['html', 'css', 'javascript'],
-  live_version: 'https://hammas-saleem.github.io/Portfolio',
-  source_link: '',
-},
-{
-  id: 2,
-  name: 'Multi-Post Stories',
-  shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-  featured: ['CANOPY', 'Back End Dev', 2015],
-  image: 'images/mps2.png',
-  imageDesktop: 'images/snap02.png',
-  technologies: ['html', 'css', 'red'],
-  live_version: 'https://hammas-saleem.github.io/Portfolio',
-  source_link: '',
-},
-{
-  id: 3,
-  name: 'Tonic',
-  shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-  featured: ['CANOPY', 'Back End Dev', 2015],
-  image: 'images/mps.png',
-  imageDesktop: 'images/snap03.png',
-  technologies: ['html', 'css', 'red'],
-  live_version: 'https://hammas-saleem.github.io/Portfolio',
-  source_link: '',
-},
-{
-  id: 4,
-  name: 'Multi-Post Stories',
-  shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-  featured: ['CANOPY', 'Back End Dev', 2015],
-  image: 'images/mps2.png',
-  imageDesktop: 'images/snap04.png',
-  technologies: ['html', 'css', 'red'],
-  live_version: 'https://hammas-saleem.github.io/Portfolio',
-  source_link: '',
-},
-];
-
 for(let i=0; i<array.length; i++){
 dynamicWork.innerHTML += `<div class="cr-grid">
   <div id=${array[i].id} class="w1contain">
@@ -121,9 +120,9 @@ dynamicWork.innerHTML += `<div class="cr-grid">
           <p class="w1par">${array[i].shortDescription}
           </p>
           <div class="bcontain">
-              <button type="button" class="w1btn" disabled>html</button>
-              <button type="button" class="w1btn" disabled>css</button>
-              <button type="button" class="w1btn" disabled>javaScript</button>
+              <button type="button" class="w1btn" disabled>${array[i].technologies[0]}</button>
+              <button type="button" class="w1btn" disabled>${array[i].technologies[1]}</button>
+              <button type="button" class="w1btn" disabled>${array[i].technologies[2]}</button>
           </div>
           <button id=${array[i].id} onclick="openModel(this.id)" type="button" class="w1btn2"><a  href="#model">See Project</a></button>
       </div>

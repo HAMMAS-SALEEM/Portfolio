@@ -284,9 +284,9 @@ body {
   padding: 6px 10px;
   border-radius: 8px;
   color: #396df2;
-  width: 120px;
+  width: 113px;
   height: 26px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .buttons {
