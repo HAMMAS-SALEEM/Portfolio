@@ -96,7 +96,7 @@ function openModel(id) {
 }
 
 openMain();
-closeMain();
+closeMain();git
 openModel();
 closeModel();
 for (let i = 0; i < array.length; i += 1) {
