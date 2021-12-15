@@ -23,7 +23,7 @@ function openModel(id) {
   console.log(id);
   for ( let i=0; i<array.length; i++){
     if (id == array[i].id){
-      modelView.innerHTML += `
+      modelView.innerHTML = `
       <div class="model_content" id="modelcontent">
       <div class="model_header">
           <h2 class="project_title">${array[i].name}</h2>
@@ -43,7 +43,7 @@ function openModel(id) {
       </ul>
       <div class="buttons">
           <a class="model_btn live" href=${array[i].live_version}>See live</a>
-          <a class="model_btn source" href=${array[i].source_link}></a>
+          <a class="model_btn source" href=${array[i].source_link}>See project</a>
       </div>
   </div>`
      } 
@@ -124,7 +124,7 @@ dynamicWork.innerHTML += `<div class="cr-grid">
               <button type="button" class="w1btn" disabled>css</button>
               <button type="button" class="w1btn" disabled>javaScript</button>
           </div>
-          <button id=${array[i].id} onclick="openModel(this.id)" type="button" class="w1btn2">See Project</button>
+          <button id=${array[i].id} onclick="openModel(this.id)" type="button" class="w1btn2"><a  href="#model">See Project</a></button>
       </div>
   </div>
   </div>
