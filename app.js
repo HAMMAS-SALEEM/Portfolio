@@ -34,7 +34,8 @@ function openModel(id) {
           <li class="item2"><span class="dot">&bull;</span><span>${array[i].featured[1]}</span></li>
           <li class="item2"><span class="dot">&bull;</span><span>${array[i].featured[2]}</span></li>
       </ul>
-      <img class="img_project " src=${array[i].image} alt="project">
+      <img class="img_project" src=${array[i].image} alt="project">
+      <img class="img_desktop" src=${array[i].imageDesktop} alt="project desktop screenshot">
       <p class="project_description">${array[i].longDescription}</p>
       <ul class="tech_list">
           <li>${array[i].technologies[0]}</li>

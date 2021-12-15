@@ -246,8 +246,8 @@ body {
   margin-right: 10px;
 }
 
-.img_project {
-  width: 90%;
+.img_desktop {
+  display: none;
 }
 
 .tech_list {
@@ -869,6 +869,30 @@ body {
   .home-ind {
     display: none;
   }
+
+  .img_project {
+    display: none;
+  }
+
+  .model_content {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+  }
+
+  .model_header {
+    grid-column: 1 / 4;
+  }
+
+  .info_list {
+    grid-column: 1 / 4;
+  }
+
+  .img_desktop {
+    grid-column: 1/4;
+    display: inherit;
+  }
+
+  
 
   @keyframes connect-right {
     from {
