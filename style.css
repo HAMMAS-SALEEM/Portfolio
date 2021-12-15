@@ -184,18 +184,18 @@ body {
 
 .model_content {
   width: 90%;
-  height: 800px;
+  height: calc(100vh - 20px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   background-color: #fff;
-  border-radius: 8PX;
+  border-radius: 8px;
+  padding-bottom: 10px;
 }
 
 .model_header {
   display: flex;
-  font-display: row;
   width: 90%;
   justify-content: space-between;
   align-items: center;
@@ -204,7 +204,7 @@ body {
 .project_title {
   color: #172b4d;
   font-weight: 700;
-  font-size: 32px;
+  font-size: auto;
   line-height: 44px;
 }
 
@@ -272,11 +272,11 @@ body {
 
 .project_description {
   text-align: start;
-   width: 90%;
-   color: #344563;
-   line-height: 24px;
-   font-size: 15px;
-   font-weight: 400;
+  color: #344563;
+  font-size: 15px;
+  width: 90%;
+  line-height: 24px;
+  font-weight: 400; 
 }
 
 .model_btn {
@@ -886,5 +886,13 @@ body {
     to {
       transform: translateX(15px);
     }
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .project_description {
+    font-size: 13px;
+    line-height: 17px;
   }
 }

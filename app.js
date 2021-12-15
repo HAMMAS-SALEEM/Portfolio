@@ -57,7 +57,7 @@ const array = [{
   id: 1,
   name: 'Tonic',
   shortDescription:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ',
   featured: ['CANOPY', 'Back End Dev', 2015],
   image: 'images/SP.png',
   imageDesktop: 'images/Snap01.png',
