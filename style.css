@@ -74,6 +74,7 @@ nav {
 
 body {
   background-color: #e5e5e5;
+  overflow: auto;
 }
 
 .homepage {
@@ -172,7 +173,7 @@ body {
 .bg_model {
   background-color: rgba(193, 199, 208, 0.7);
   position: fixed;
-  top: 0; 
+  top: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -204,12 +205,12 @@ body {
 .project_title {
   color: #172b4d;
   font-weight: 700;
-  font-size: auto;
+  font-size: 32px;
   line-height: 44px;
 }
 
 .cross_btn {
-  color: #67798E;
+  color: #67798e;
   font-size: 30px;
 }
 
@@ -242,7 +243,7 @@ body {
 .dot {
   line-height: 16px;
   font-size: 30px;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .img_project {
@@ -252,7 +253,6 @@ body {
 .tech_list {
   width: 90%;
   display: flex;
-  font-display: row;
   align-items: flex-start;
   list-style: none;
 }
@@ -276,7 +276,7 @@ body {
   font-size: 15px;
   width: 90%;
   line-height: 24px;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 .model_btn {
@@ -294,10 +294,7 @@ body {
   justify-content: space-around;
 }
 
-
-
 /* Model Style */
-
 
 .w1contain {
   display: flex;
@@ -416,11 +413,6 @@ body {
   background: white;
   color: #5e6c84;
   border: 1px solid #5e6c84;
-}
-
-body {
-  position: relative;
-  overflow: auto;
 }
 
 .modal {
@@ -890,7 +882,6 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-
   .project_description {
     font-size: 13px;
     line-height: 17px;
