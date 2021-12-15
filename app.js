@@ -2,6 +2,8 @@ const main = document.querySelector('.mobile_menu');
 const modal = document.querySelector('.modal');
 const { body } = document.body;
 const dynamicWork = document.querySelector('.works');
+const modelView = document.querySelector('.bg_model');
+const cross_btn = document.getElementsByClassName('cross_btn');
 
 function openMain() {
   main.style.visibility = 'visible';
@@ -9,6 +11,14 @@ function openMain() {
 
 function closeMain() {
   main.style.visibility = 'hidden';
+}
+
+function closeModel() {
+  modelView.style.visibility = 'hidden'
+}
+
+function openModel() {
+  modelView.style.visibility = 'visible'
 }
 
 openMain();
@@ -81,7 +91,7 @@ dynamicWork.innerHTML += `<div class="cr-grid">
               <button type="button" class="w1btn" disabled>css</button>
               <button type="button" class="w1btn" disabled>javaScript</button>
           </div>
-          <button onclick="openModal()" type="button" class="w1btn2">See Project</button>
+          <button onclick="openModel()" type="button" class="w1btn2">See Project</button>
       </div>
   </div>
   </div> 
