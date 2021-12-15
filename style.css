@@ -916,7 +916,7 @@ body {
     grid-column: 4/5;
     grid-row: 4/5;
     place-self: center;
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
   .buttons {
@@ -930,6 +930,7 @@ body {
 
   .model_btn {
     margin-top: 0;
+    width: 130px;
   }
 
   @keyframes connect-right {
