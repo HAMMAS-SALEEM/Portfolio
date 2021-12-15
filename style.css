@@ -184,13 +184,15 @@ body {
 
 .model_content {
   width: 90%;
-  height: 800px;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   background-color: #fff;
   border-radius: 8PX;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .model_header {
@@ -246,7 +248,7 @@ body {
 }
 
 .img_project {
-  width: 90%;
+  /* width: 50vh; */
 }
 
 .tech_list {
@@ -255,6 +257,7 @@ body {
   font-display: row;
   align-items: flex-start;
   list-style: none;
+  margin-bottom: 30px;
 }
 
 .tech_list li {
