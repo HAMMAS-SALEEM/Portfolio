@@ -921,6 +921,7 @@ body {
     grid-row: 4/5;
     place-self: center;
     margin-left: 20px;
+    margin-top: 20px;
   }
 
   .buttons {
@@ -929,9 +930,8 @@ body {
     margin-top: 0;
   }
 
-  img .button_line {
-    position: relative;
-    top: 20px;
+  .button_line {
+    display: none;
   }
 
   .live {
