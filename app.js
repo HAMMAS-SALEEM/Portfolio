@@ -86,6 +86,7 @@ function openModel(id) {
           <li class="margin_li">${array[i].technologies[1]}</li>
           <li class="margin_li">${array[i].technologies[2]}</li>
       </ul>
+      <img src="./images/border_line.png" alt="border line" class="button_line">
       <div class="buttons">
           <a class="model_btn live" href=${array[i].live_version}>See live<img class="_icon" src="./images/Icon.svg" alt="live icon"></a>
           <a class="model_btn source" href=${array[i].source_link}>See project<img class="_icon" src="./images/Vector.svg" alt="github icon"></a>

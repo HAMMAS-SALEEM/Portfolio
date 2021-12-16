@@ -181,10 +181,11 @@ body {
   justify-content: center;
   visibility: hidden;
   backdrop-filter: blur(10px);
+  z-index: 10;
 }
 
 .model_content {
-  width: 90%;
+  width: 93%;
   height: calc(100vh - 20px);
   display: flex;
   flex-direction: column;
@@ -256,6 +257,7 @@ body {
   display: flex;
   align-items: flex-start;
   list-style: none;
+  margin-bottom: 30px;
 }
 
 .tech_list li {
@@ -295,6 +297,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  margin-top: 31px;
 }
 
 ._icon {
@@ -923,6 +926,12 @@ body {
   .buttons {
     grid-column: 4/5;
     grid-row: 5/6;
+    margin-top: 0;
+  }
+
+  img .button_line {
+    position: relative;
+    top: 20px;
   }
 
   .live {
@@ -934,7 +943,7 @@ body {
     width: 130px;
   }
 
-  /* @keyframes connect-right {
+  @keyframes connect-right {
     from {
       transform: translateX(0);
     }
@@ -942,7 +951,7 @@ body {
     to {
       transform: translateX(15px);
     }
-  } */
+  }
 }
 
 @media screen and (max-width: 320px) {
