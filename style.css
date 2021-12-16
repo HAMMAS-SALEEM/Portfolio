@@ -884,7 +884,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, auto);
-    height: 90vh;
+    height: auto;
     width: 70vw;
   }
 
@@ -933,7 +933,7 @@ body {
     width: 130px;
   }
 
-  @keyframes connect-right {
+  /* @keyframes connect-right {
     from {
       transform: translateX(0);
     }
@@ -941,7 +941,7 @@ body {
     to {
       transform: translateX(15px);
     }
-  }
+  } */
 }
 
 @media screen and (max-width: 320px) {
