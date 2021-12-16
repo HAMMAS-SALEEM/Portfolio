@@ -4,17 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZLCHLPPZL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-MZLCHLPPZL');
-    </script>
-    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
@@ -25,8 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/303b1d319c.js"></script>
-    
- 
+    <script src="google.js"></script>
     <title>HAMMAS Portfolio Homepage</title>
 </head>
 
@@ -52,7 +40,8 @@
                 <a onclick="closeMain()" href="#about-me" class="nav-link">About</a>
                 <a onclick="closeMain()" href="#contact-us" class="nav-link">Contact</a>
             </nav>
-            <div class="home-ind-container"><img class="home-ind-menu" src="./images/home-indicator.png" alt="home indicator"></div>
+            <div class="home-ind-container"><img class="home-ind-menu" src="./images/home-indicator.png"
+                    alt="home indicator"></div>
         </div>
     </header>
     <section class="homepage">
@@ -74,102 +63,17 @@
             </div>
         </div>
     </section>
-    <section id="works" class="works">
-        <div class="cr-grid">
-            <div class="w1contain">
-                <img class="pti" src="./images/SP.png" alt="Portfolio Title Image">
-                <img class="snap01 img13" src="./images/Snap01.png" alt="Portfolio">
-                <div class="for-fullscreen">
-                    <header>
-                        <h2 class="works-title">Tonic</h2>
-                    </header>
-                    <ul class="specs w11contain">
-                        <li class="spec1">CANOPY</li>
-                        <li class="spec2">Back End Dev</li>
-                        <li class="spec2">2015</li>
-                    </ul>
-                    <p class="w1par">A daily selection of privately personalized reads; no accounts or sign-ups
-                        required.
-                    </p>
-                    <div class="bcontain">
-                        <button type="button" class="w1btn" disabled>html</button>
-                        <button type="button" class="w1btn w1b" disabled>css</button>
-                        <button type="button" class="w1btn w1b" disabled>javaScript</button>
-                    </div>
-                    <button type="button" class="w1btn2">See Project</button>
-                </div>
-            </div>
-            <div class="w1contain">
-                <img class="pti" src="./images/mps2.png" alt="Portfolio Title Image">
-                <div class="for-portfolio">
-                    <header>
-                        <h2 class="works-title">Multi-Post Stories</h2>
-                    </header>
-                    <ul class="specs w11contain">
-                        <li class="spec1">CANOPY</li>
-                        <li class="spec2">Back End Dev</li>
-                        <li class="spec2">2015</li>
-                    </ul>
-                    <p class="w1par">A daily selection of privately personalized reads; no accounts or sign-ups
-                        required.
-                    </p>
-                    <div class="bcontain">
-                        <button type="button" class="w1btn" disabled>html</button>
-                        <button type="button" class="w1btn w1b" disabled>css</button>
-                        <button type="button" class="w1btn w1b" disabled>javaScript</button>
-                    </div>
-                    <button type="button" class="w1btn2">See Project</button>
-                </div>
-                <img class="snap01 img24" src="./images/snap02.png" alt="Portfolio">
-            </div>
-            <div class="w1contain">
-                <img class="pti" src="./images/mps.png" alt="Portfolio Title Image">
-                <img class="snap01 img13" src="./images/snap03.png" alt="Portfolio">
-                <div class="for-portfolio">
-                    <header>
-                        <h2 class="works-title">Tonic</h2>
-                    </header>
-                    <ul class="specs w11contain">
-                        <li class="spec1">CANOPY</li>
-                        <li class="spec2">Back End Dev</li>
-                        <li class="spec2">2015</li>
-                    </ul>
-                    <p class="w1par">A daily selection of privately personalized reads; no accounts or sign-ups
-                        required.
-                    </p>
-                    <div class="bcontain">
-                        <button type="button" class="w1btn" disabled>html</button>
-                        <button type="button" class="w1btn w1b" disabled>css</button>
-                        <button type="button" class="w1btn w1b" disabled>javaScript</button>
-                    </div>
-                    <button type="button" class="w1btn2">See Project</button>
-                </div>
-            </div>
-            <div class="w1contain">
-                <img class="pti" src="./images/mps2.png" alt="Portfolio Title Image">
-                <div class="for-portfolio">
-                    <header>
-                        <h2 class="works-title">Multi-Post Stories</h2>
-                    </header>
-                    <ul class="specs w11contain">
-                        <li class="spec1">CANOPY</li>
-                        <li class="spec2">Back End Dev</li>
-                        <li class="spec2">2015</li>
-                    </ul>
-                    <p class="w1par">A daily selection of privately personalized reads; no accounts or sign-ups
-                        required.
-                    </p>
-                    <div class="bcontain">
-                        <button type="button" class="w1btn" disabled>html</button>
-                        <button type="button" class="w1btn w1b" disabled>css</button>
-                        <button type="button" class="w1btn w1b" disabled>javaScript</button>
-                    </div>
-                    <button type="button" class="w1btn2">See Project</button>
-                </div>
-                <img class="snap01 img24" src="./images/snap04.png" alt="Portfolio">
-            </div>
-        </div>
-    </section>
+
+    <!-- Model Window -->
+    <div class="bg_model" id="model">
+
+    </div>
+    <!-- Model Window -->
+
+    <!-- Work section -->
+    <section id="works" class="works"></section>
+    <!-- Work section -->
+
     <section id="about-me" class="about-me-01">
         <div class="about-me">
             <div class="container abm-container">
@@ -252,6 +156,13 @@
             </form>
         </div>
     </footer>
+    <div class="modal" id="modal">
+        <div class="modal_container" id="modal_container">
+            <span onclick="closeModal()" class="closeBtn">&times;</span>
+        </div>
+    </div>
+    <section id="works2" class="works2">
+    </section>
     <script src='app.js'></script>
 </body>
 
