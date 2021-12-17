@@ -602,6 +602,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style: none;
 }
 
 .home-ind {
@@ -660,6 +661,30 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+/* Validation message */
+
+.hidden {
+  display: none;
+}
+
+.error {
+  display: block;
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
+}
+
+.success {
+  display: block;
+  color: green;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
 }
 
 @media screen and (min-width: 1024px) {
