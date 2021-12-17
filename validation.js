@@ -6,7 +6,6 @@ const msgError = document.querySelector('#message_error');
 const msgSuccess = document.querySelector('#message_success');
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
   if (!emailAdrdress.value.match(emailPattern)) {
     e.preventDefault();
     msgError.classList.toggle('error');
