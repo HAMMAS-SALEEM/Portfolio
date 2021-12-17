@@ -2,7 +2,7 @@ const form2 = document.querySelector('#contact_info');
 
 form2.addEventListener('submit', (e) => {
   e.preventDefault();
-    const obj = {
+  const obj = {
     fullname: document.querySelector('#name').value,
     EmailAdress: document.querySelector('#email').value,
     message: document.querySelector('#message').value,
@@ -11,12 +11,11 @@ form2.addEventListener('submit', (e) => {
   localStorage.setItem('DATA', JSON.stringify(obj));
 });
 
-let getData = localStorage.getItem('DATA');
-let get_data = JSON.parse(getData);
+const getData = localStorage.getItem('DATA');
+const getDataValue = JSON.parse(getData);
 
-form2.addEventListener('load', (e) => {
-    fullname.value = get_data.fullname;
-    EmailAdress.value = get_data.EmailAdress;
-    message.value = get_data.message; 
-}
-);
+window.addEventListener('load', () => {
+  document.querySelector('#name').value = getDataValue.fullname;
+  document.querySelector('#email').value = getDataValue.EmailAdress;
+  document.querySelector('#message').value = getDataValue.message;
+});
