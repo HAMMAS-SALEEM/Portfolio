@@ -139,22 +139,24 @@
     </section>
     <footer id="contact-us" class="contact-back">
         <div class="contact-form">
-            <form class="contact-info" action="https://formspree.io/f/mwkyenjw" method="POST">
+            <form class="contact-info" id="contact_info" action="https://formspree.io/f/mwkyenjw" method="POST">
                 <h2>Contact me</h2>
                 <p>If you have an application you are interested in developing, a feature that you need built or a
                     project
                     that needs coding. I’d love to help with it </p>
-                <div class="input-container">
-                    <input type="text" name="Name" class="contact-input" maxlength="30" required
-                        placeholder="Write your name">
-                    <input type="email" name="_replyTo" class="contact-input" placeholder="Write your email" required>
-                    <textarea name="message" class="contact-textarea" cols="30" rows="10" required maxlength="500"
-                        placeholder="Write your message here"></textarea>
-                    <input type="submit" class="contact-button" value="Get It Touch">
-                </div>
+                <ul class="input-container">
+                    <li><input type="text" name="Name" class="contact-input" maxlength="30" required placeholder="Write your name"></li>
+                    <li><input type="email" name="_replyTo" class="contact-input" id="email" placeholder="Write your email" required></li>
+                    <li><textarea name="message" class="contact-textarea" cols="30" rows="10" required maxlength="500"placeholder="Write your message here"></textarea></li>
+                    <li>
+                        <small id="message_error" class="hidden">Enter email in lowercase</small>
+                        <small id="message_success" class="hidden">From Submitted</small>
+                    </li>
+                    <li><input type="submit" class="contact-button" value="Get It Touch"></li>
+                </ul>
                 <img class="home-ind" src="./images/home-indicator.png" alt="home_indicator">
             </form>
-        </div>
+        </div>       
     </footer>
     <div class="modal" id="modal">
         <div class="modal_container" id="modal_container">
@@ -164,6 +166,7 @@
     <section id="works2" class="works2">
     </section>
     <script src='app.js'></script>
+    <script src="validation.js"></script>
 </body>
 
 </html>
