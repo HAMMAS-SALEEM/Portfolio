@@ -1,4 +1,4 @@
-const form2 = document.querySelector('#');
+const form2 = document.querySelector('#contact_info');
 
 form2.addEventListener('submit', (e) => {
   e.preventDefault();
