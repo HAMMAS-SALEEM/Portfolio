@@ -919,7 +919,6 @@ body {
     top: 20px;
     bottom: 20px;
     overflow-y: scroll;
-    cursor: pointer;
   }
 
   .model_content::-webkit-scrollbar {
