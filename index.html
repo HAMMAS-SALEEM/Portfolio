@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZLCHLPPZL"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
@@ -14,7 +13,17 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/303b1d319c.js"></script>
-    <script src="google.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZLCHLPPZL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MZLCHLPPZL');
+    </script>
     <title>HAMMAS Portfolio Homepage</title>
 </head>
 
@@ -145,12 +154,12 @@
                     project
                     that needs coding. I’d love to help with it </p>
                 <ul class="input-container">
-                    <li><input type="text" name="Name" class="contact-input" maxlength="30" required
+                    <li><input type="text" id="name" name="Name" class="contact-input" maxlength="30" required
                             placeholder="Write your name"></li>
                     <li><input type="email" name="_replyTo" class="contact-input" id="email"
                             placeholder="Write your email" required></li>
-                    <li><textarea name="message" class="contact-textarea" cols="30" rows="10" required maxlength="500"
-                            placeholder="Write your message here"></textarea></li>
+                    <li><textarea name="message" id="message" class="contact-textarea" cols="30" rows="10" required
+                            maxlength="500" placeholder="Write your message here"></textarea></li>
                     <li>
                         <small id="message_error" class="hidden">Enter email in lowercase</small>
                         <small id="message_success" class="hidden">From Submitted</small>
@@ -170,6 +179,7 @@
     </section>
     <script src='app.js'></script>
     <script src="validation.js"></script>
+    <script src="localStorage.js"></script>
 </body>
 
 </html>
