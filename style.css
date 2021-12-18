@@ -915,6 +915,15 @@ body {
     grid-template-rows: repeat(5, auto);
     height: auto;
     width: 70vw;
+    position: fixed;
+    top: 20px;
+    bottom: 20px;
+    overflow-y: scroll;
+    cursor: pointer;
+  }
+
+  .model_content::-webkit-scrollbar {
+    display: none;
   }
 
   .model_header {
