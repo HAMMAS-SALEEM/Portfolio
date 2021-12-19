@@ -47,6 +47,8 @@ const array = [{
   source_link: '',
 },
 ];
+const burger = document.querySelector('.ham0')
+const closeBtn2 = document.querySelector('.cross_icon')
 const main = document.querySelector('.mobile_menu');
 const dynamicWork = document.querySelector('.works');
 const modelView = document.querySelector('.bg_model');
@@ -55,9 +57,13 @@ function openMain() {
   main.style.visibility = 'visible';
 }
 
+burger.addEventListener('click' , openMain)
+
 function closeMain() {
   main.style.visibility = 'hidden';
 }
+
+closeBtn2.addEventListener('click' , closeMain)
 
 function closeModel() {
   modelView.style.visibility = 'hidden';
@@ -95,9 +101,6 @@ function openModel(id) {
     }
   }
 }
-
-openMain();
-closeMain();
 openModel();
 closeModel();
 for (let i = 0; i < array.length; i += 1) {
