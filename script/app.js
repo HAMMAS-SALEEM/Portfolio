@@ -47,11 +47,51 @@ const array = [{
   source_link: '',
 },
 ];
+
 const burger = document.querySelector('.ham0')
-const closeBtn2 = document.querySelector('.cross_icon')
+const closeBtn2 = document.querySelectorAll(".nav-links")
 const main = document.querySelector('.mobile_menu');
 const dynamicWork = document.querySelector('.works');
 const modelView = document.querySelector('.bg_model');
+const orderList = document.querySelector('#for-fullscreen')
+
+
+function reverseOrder() {
+  let num = array.id.Number();
+if(num%2===0){
+  orderList.classList.add('order')
+}  
+}
+
+
+
+for (let i = 0; i < array.length; i += 1) {
+  dynamicWork.innerHTML += `<div class="cr-grid">
+  <div id=${array[i].id} class="w1contain">
+      <img class="pti" src=${array[i].image} alt="Portfolio Title Image"/>
+      <img class="snap01 img13" src=${array[i].imageDesktop} alt="Portfolio"/>
+      <div id="for-fullscreen">
+          <header>
+              <h2 class="works-title">${array[i].name}</h2>
+          </header>
+          <ul class="specs w11contain">
+              <li class="spec1">${array[i].featured[0]}</li>
+              <li class="spec2">${array[i].featured[1]}</li>
+              <li class="spec2">${array[i].featured[2]}</li>
+          </ul>
+          <p class="w1par">${array[i].shortDescription}
+          </p>
+          <div class="bcontain">
+              <button type="button" class="w1btn" disabled>${array[i].technologies[0]}</button>
+              <button type="button" class="w1btn" disabled>${array[i].technologies[1]}</button>
+              <button type="button" class="w1btn" disabled>${array[i].technologies[2]}</button>
+          </div>
+          <button id=${array[i].id} onclick="openModel(this.id)" type="button" class="w1btn2"><a  href="#model">See Project</a></button>
+      </div>
+  </div>
+  </div>
+  `;
+}
 
 function openMain() {
   main.style.visibility = 'visible';
@@ -64,10 +104,6 @@ function closeMain() {
 }
 
 closeBtn2.addEventListener('click' , closeMain)
-
-function closeModel() {
-  modelView.style.visibility = 'hidden';
-}
 
 function openModel(id) {
   modelView.style.visibility = 'visible';
@@ -101,32 +137,12 @@ function openModel(id) {
     }
   }
 }
+
+function closeModel() {
+  modelView.style.visibility = 'hidden';
+}
+
+
 openModel();
 closeModel();
-for (let i = 0; i < array.length; i += 1) {
-  dynamicWork.innerHTML += `<div class="cr-grid">
-  <div id=${array[i].id} class="w1contain">
-      <img class="pti" src=${array[i].image} alt="Portfolio Title Image"/>
-      <img class="snap01 img13" src=${array[i].imageDesktop} alt="Portfolio"/>
-      <div class="for-fullscreen">
-          <header>
-              <h2 class="works-title">${array[i].name}</h2>
-          </header>
-          <ul class="specs w11contain">
-              <li class="spec1">${array[i].featured[0]}</li>
-              <li class="spec2">${array[i].featured[1]}</li>
-              <li class="spec2">${array[i].featured[2]}</li>
-          </ul>
-          <p class="w1par">${array[i].shortDescription}
-          </p>
-          <div class="bcontain">
-              <button type="button" class="w1btn" disabled>${array[i].technologies[0]}</button>
-              <button type="button" class="w1btn" disabled>${array[i].technologies[1]}</button>
-              <button type="button" class="w1btn" disabled>${array[i].technologies[2]}</button>
-          </div>
-          <button id=${array[i].id} onclick="openModel(this.id)" type="button" class="w1btn2"><a  href="#model">See Project</a></button>
-      </div>
-  </div>
-  </div>
-  `;
-}
+

@@ -746,7 +746,7 @@ body {
     align-self: center;
   }
 
-  .for-fullscreen {
+  #for-fullscreen {
     margin-left: 50px;
   }
 
@@ -974,6 +974,10 @@ body {
   .model_btn {
     margin-top: 0;
     width: 130px;
+  }
+
+  .order {
+    order: 1;
   }
 
   @keyframes connect-right {
