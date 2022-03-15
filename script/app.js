@@ -7,8 +7,8 @@ const array = [{
   image: 'images/watch_mobile.gif',
   imageDesktop: 'images/watch_desktop.gif',
   technologies: ['html', 'css', 'javascript'],
-  live_version: 'http://hammas-saleem.github.io/HTML-CSS-CAPSTONE-PROJECT',
-  source_link: 'http://github.com/HAMMAS-SALEEM/HTML-CSS-CAPSTONE-PROJECT',
+  live_version: 'https://hammas-saleem.github.io/Pakistan-Watch-Week-2022/',
+  source_link: 'https://github.com/HAMMAS-SALEEM/Pakistan-Watch-Week-2022',
 },
 {
   id: '2',
