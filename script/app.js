@@ -34,6 +34,18 @@ const array = [{
   live_version: 'https://hammas-saleem.github.io/INFLIX/',
   source_link: 'https://github.com/HAMMAS-SALEEM/INFLIX',
 },
+{
+  id: '4',
+  name: 'CovidMonitor',
+  shortDescription: 'This web application is a type of a showcase of movies with details.',
+  longDescription: 'This web application is a type of showcase of movies with details of the movies and an option to get comments on each movie. which is using APIs to get and set data.',
+  featured: ['Interactive', 'Responsive', 2022],
+  image: 'images/CovidMonitor-mobile.GIF',
+  imageDesktop: 'images/CovidMonitor.GIF',
+  technologies: ['html', 'css', 'javascript'],
+  live_version: 'https://hammascovidmonitor.netlify.app/',
+  source_link: 'https://github.com/HAMMAS-SALEEM/CovidMonitor',
+},
 ];
 const main = document.querySelector('.mobile_menu');
 const dynamicWork = document.querySelector('.works');
