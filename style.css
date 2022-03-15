@@ -342,7 +342,6 @@ body {
 
 .w1par {
   width: 295px;
-  height: 76px;
   margin-top: 20px;
   color: #344563;
   font-size: 17px;
@@ -760,6 +759,8 @@ body {
 
   .snap01 {
     display: inherit;
+    width: 350px;
+    margin: auto;
   }
 
   .img13 {
