@@ -72,6 +72,12 @@ nav {
   right: 25%;
 }
 
+#work,
+#about-me,
+#contact-us {
+  transition: all 3s ease-in-out;
+}
+
 body {
   background-color: #e5e5e5;
   overflow: auto;
@@ -201,6 +207,7 @@ body {
   width: 90%;
   justify-content: space-between;
   align-items: center;
+  margin: 12px 0;
 }
 
 .project_title {
@@ -216,11 +223,16 @@ body {
   cursor: pointer;
 }
 
+.img_project {
+  width: 100%;
+}
+
 .info_list {
   display: flex;
   flex-direction: row;
   align-self: flex-start;
   list-style: none;
+  margin-bottom: 12px;
 }
 
 .info_list li {
@@ -297,7 +309,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-top: 31px;
+  margin: 31px 0 12px 0;
 }
 
 ._icon {
@@ -449,6 +461,10 @@ body {
   padding: 20px;
   font-size: 24px;
   color: rgba(103, 121, 142, 1);
+}
+
+.pti {
+  width: 100%;
 }
 
 .section-about-myself-2 {
@@ -705,11 +721,12 @@ body {
     text-decoration: none;
     margin-right: 30px;
     color: #344563;
+    transition: all 0.2s linear;
   }
 
   .nav-link:hover {
     color: #6070ff;
-    transition: 100ms;
+    transition: all 100ms ease-in-out;
   }
 
   .homepage {
@@ -755,6 +772,7 @@ body {
 
   .pti {
     display: none;
+    width: 100%;
   }
 
   .snap01 {
