@@ -50,7 +50,7 @@ const array = [{
   id: '5',
   name: 'MyBudget',
   shortDescription: 'MyBudget is a budget manager application.',
-  longDescription: `"MyBudget" is a budget manager web application that allows users to keep track of their budget with different categories.`,
+  longDescription: '"MyBudget" is a budget manager web application that allows users to keep track of their budget with different categories.',
   featured: ['Interactive', 'Responsive', 2022],
   image: 'images/my_budget.png',
   imageDesktop: 'images/my_budget.png',
@@ -59,7 +59,6 @@ const array = [{
   source_link: 'https://github.com/HAMMAS-SALEEM/MyBudget',
 },
 ];
-
 
 const main = document.querySelector('.mobile_menu');
 const dynamicWork = document.querySelector('.works');
