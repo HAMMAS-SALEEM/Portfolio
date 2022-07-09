@@ -960,6 +960,7 @@ body {
     grid-row: 3/4;
     display: inherit;
     place-self: stretch center;
+    width: 100%;
   }
 
   .project_description {
