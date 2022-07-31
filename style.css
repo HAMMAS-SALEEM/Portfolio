@@ -9,6 +9,10 @@ nav {
   padding: 15px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   font-weight: bold;
   font-size: 18px;
